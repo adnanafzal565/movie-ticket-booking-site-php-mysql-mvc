@@ -1,0 +1,1331 @@
+.movie-thumbnail-trailers {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+input[type=number].disable-arrows::-webkit-inner-spin-button, 
+input[type=number].disable-arrows::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*
+Theme Name: Movie Point
+Version: 1.0
+Author: Jsoft
+Description: Online Movie,Vedio and TV Show HTML Template
+*/
+
+/**
+ *** CSS Indexing ***
+ * THEME DEFAULT CSS
+ * RESET CSS
+ * HEADER AREA CSS
+ * HERO AREA CSS
+ * portfolio AREA CSS
+ * video AREA CSS
+ * news AREA CSS
+ * footer AREA CSS
+ * Movie details PAGE CSS
+ * seat plan PAGE CSS
+ * login PAGE CSS
+ * blog PAGE CSS
+ * blog details PAGE CSS
+ * PRELOADER CSS
+**/
+
+/*----------------------------------
+--------- THEME DEFAULT CSS --------
+----------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900');
+body {
+    line-height: 24px;
+    font-size: 14px;
+    color: #b6b7b9;
+	background: #13151f;
+	font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    position: relative;
+}
+
+/*----------------------------
+---------- RESET CSS ---------
+----------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+	color: #fff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0px;
+}
+h1 {
+    font-size: 36px;
+}
+h2 {
+    font-size: 30px;
+}
+h4 {
+    font-size: 18px;
+}
+h6 {
+    font-size: 14px;
+}
+a {
+    transition: 0.6s;
+}
+a,
+a:hover {
+    color: #fff;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+iframe {
+    width: 100%;
+    border: none;
+}
+a,
+a:hover,
+a:focus,
+a:active,
+button:focus {
+    text-decoration: none;
+    border: none;
+    outline: 0;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ol {
+    margin-bottom: 0;
+}
+select:focus,
+select:active {
+    box-shadow: none;
+    border: 0;
+    outline: 0
+}
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+    outline: none;
+}
+button{
+    cursor: pointer;
+}
+textarea {
+	height: 160px;
+}
+input[type="text"],
+input[type="submit"],
+button[type="submit"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="search"],
+input[type="password"],
+input[type="number"],
+textarea {
+    background: #24262d;
+    width: 100%;
+    padding: 8px 15px;
+    border: none;
+}
+input[type="submit"],
+button[type="submit"] {
+    width: auto;
+    color: #666;
+    padding: 4px 15px;
+}
+textarea:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+.section-title h1 i {
+    color: #fece50;
+	font-size: 40px;
+	margin-right: 5px;
+}
+.mt-100 {
+    margin-top: 100px;
+}
+.mt-30 {
+    margin-top: 30px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.pt-60 {
+	padding-top: 60px;
+}
+.pb-90 {
+	padding-bottom: 90px;
+}
+.pb-20 {
+	padding-bottom: 20px;
+}
+.ptb-100 {
+    padding: 100px 0;
+}
+.ptb-90 {
+    padding: 90px 0;
+}
+.owl-nav div {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    width: 35px;
+    background: #fff;
+    color: #000;
+    height: 35px;
+    line-height: 36px;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 29px;
+    transition: 0.4s;
+    margin-top: -60px;
+}
+.owl-nav div:hover {
+    background: #000;
+    color: #fff;
+}
+.owl-nav div.owl-next {
+    right: 20px;
+    left: auto;
+}
+.owl-dots {
+    text-align: center;
+    margin-top: 35px;
+}
+.owl-dot {
+    width: 20px;
+    height: 6px;
+	border-radius: 5px;
+    background: #595a5f;
+    display: inline-block;
+    margin: 0 5px;
+}
+.owl-dot.active {
+    width: 28px;
+    background: #eb315a;
+}
+.display-table {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.display-tablecell {
+    display: table-cell;
+    vertical-align: middle;
+}
+.theme-btn {
+	background: #eb315a;
+    border: 1px solid #eb315a;
+    color: #fff;
+	border-radius: 35px;
+    padding: 5px 25px;
+    display: inline-block;
+    font-size: 16px;
+	cursor: pointer;
+	font-weight: 500;
+}
+a.theme-btn:hover {
+    border: 1px solid #eb315a;
+	background: transparent;
+    color: #eb315a;
+}
+.btn-tickets-slider:hover {
+    border: none !important;;
+}
+.theme-btn2:hover,
+.theme-btn2 {
+    color: #fff !important;
+	background: #963dad !important; /* Old browsers */
+	background: -moz-linear-gradient(top, #963dad 0%, #9c3db1 34%, #ba3fc4 65%, #c340ca 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #963dad 0%,#9c3db1 34%,#ba3fc4 65%,#c340ca 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #963dad 0%,#9c3db1 34%,#ba3fc4 65%,#c340ca 100%); 
+	border: none;
+}
+.flexbox-center {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+textarea,
+input,
+textarea::-webkit-input-placeholder ,
+input::-webkit-input-placeholder {
+    color: #fff;
+}
+
+/*--------------------------------------
+-------- HEADER AREA CSS START --------
+---------------------------------------*/
+.header {
+	padding: 18px 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99;
+}
+.header-area {
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(12,1fr);
+    align-items: center;
+    grid-gap: 20px;
+}
+.logo {
+    grid-column: span 2;
+    grid-row: span 2;
+    padding-right: 15px;
+}
+.header-right {
+    grid-column: span 10;
+    text-align: right;
+    display: flex;
+    align-items: center;
+}
+
+.menu-area {
+    grid-column: span 10;
+}
+.mainmenu {
+    text-align: right;
+}
+.mainmenu li {
+    display: inline-block;
+	position: relative;
+}
+.mainmenu li a:not(.theme-btn) {
+    display: inline-block;
+	margin-right: 30px;
+	padding: 3px 0;
+}
+.slicknav_menu {
+	padding: 0;
+    background: transparent;
+}
+.mainmenu {
+    display: block;
+}
+.slicknav_menu {
+	display: none;
+}
+.header.sticky {
+	border-bottom: 1px solid #fff;
+	background: #000;
+}
+.mainmenu li:hover ul {
+    transform: scaleY(1);
+}
+.mainmenu li ul li {
+	display: block;
+}
+.mainmenu li ul {
+    position: absolute;
+    top: 100%;
+    background: #000;
+    padding: 5px 15px;
+    left: 0;
+    text-align: left;
+    min-width: 200px;
+    transform: scaleY(0);
+    transition: all 0.4s;
+}
+.mainmenu li a.active, .mainmenu li a:hover {
+    color: #eb315a;
+}
+.header-right form {
+    display: flex;
+    max-width: 380px;
+    border: 1px solid #eee;
+    border-radius: 30px;
+    margin-left: auto;
+}
+.header-right form button {
+    background: transparent;
+    color: #fff;
+    border: none;
+    padding-right: 10px;
+}
+option {
+	color: #000;
+}
+.header-right form select {
+    background: url('../img/select-icon.png') no-repeat right center;
+    color: #fff;
+    padding: 0 20px 0 30px;
+    border: none;
+	-moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.header-right form input {
+    width: auto;
+	background: transparent;
+	color: #fff;
+    border: none;
+    margin: 0;
+    border-left: 1px solid #ddd;
+    margin-left: 20px;
+}
+
+.header-right ul li a:hover {
+	color: #eb315a;
+}
+.header-right ul li {
+    padding: 8px 0 0;
+    margin-left: 15px;
+    display: inline-block;
+}
+/*--------------------------------------
+--------- HEADER AREA CSS END ---------
+---------------------------------------*/
+
+/*----------------------------------
+-------- HERO AREA CSS START -------
+------------------------------------*/
+.hero-area {
+    position: relative;
+    background-image: url('../img/hero-area.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.hero-area-slide {
+    background: #13151f;
+    margin: 320px 15px 50px;
+    padding-top: 52px;
+    box-shadow: 0 0 20px #000000;
+}
+
+.hero-area-content > img {
+    position: relative;
+    margin-top: -120px;
+}
+.hero-area-slider {
+	margin: auto;
+	max-width: 950px;
+}
+
+.author-review {
+    color: #fece50;
+    float: left;
+}
+
+.review h4 {
+    padding-left: 25px;
+    overflow: hidden;
+}
+
+.review {
+    margin: 8px 0 35px;
+}
+
+.hero-area-content h3 {
+    margin-top: 35px;
+}
+
+.single-slide-cast {
+    width: 11.5%;
+	margin-right: 1%;
+	float: left;
+    margin-top: 15px;
+}
+
+.single-slide-cast img {
+    border-radius: 100%;
+}
+
+.single-slide-cast.text-center {
+    height: 45px;
+    line-height: 45px;
+    border-radius: 100%;
+    max-width: 45px;
+    border: 2px solid #eb315a;
+    color: #eb315a;
+}
+.pr-50 {
+	padding-right: 10px;
+	margin-left: -15px;
+}
+.slide-trailor {
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.slide-cast {
+    overflow: hidden;
+}
+
+.slide-trailor h3 {
+    float: left;
+    margin: 0;
+    margin-right: 25px;
+}
+.hero-area-thumb .hero-area-slide {
+	margin: 0 15px;
+}
+.thumb-prev {
+    position: absolute;
+    bottom: 0;
+    left: -690px;
+    max-width: 950px;
+    -webkit-perspective: 80px;
+    perspective: 80px;
+}
+.thumb-prev .hero-area-slide {
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: rotateY(2deg);
+    transform-style: preserve-3d;
+    transform: rotateY(2deg);
+    cursor: pointer;
+}
+.thumb-next {
+    position: absolute;
+    bottom: 0;
+    right: -690px;
+    max-width: 950px;
+    -webkit-perspective: 80px;
+    perspective: 80px;
+}
+.thumb-next .hero-area-slide {
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: rotateY(-2deg);
+    transform-style: preserve-3d;
+    transform: rotateY(-2deg);
+    cursor: pointer;
+}
+/*----------------------------------
+--------- HERO AREA CSS END --------
+-----------------------------------*/
+
+/*----------------------------------
+-------- portfolio AREA CSS START -------
+------------------------------------*/
+hr {
+	margin: 0;
+	border-top: 1px solid #ddd;
+}
+.portfolio-menu {
+	padding-top: 30px;
+}
+
+.portfolio-menu li {
+    display: inline-block;
+    position: relative;
+    margin-left: 15px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+.portfolio-menu li::before {
+    background: transparent;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    transition: 0.4s;
+    content: "";
+    height: 4px;
+    position: absolute;
+    z-index: 99;
+}
+
+.portfolio-menu li.active {
+    color: #fff;
+}
+
+.portfolio-menu li.active::before,.portfolio-menu li:hover::before {
+    background: #eb315a;
+}
+.portfolio-content h2 {
+    margin-top: 20px;
+}
+
+.single-portfolio {
+    margin-top: 50px;
+}
+.video-area,
+.single-portfolio-img {
+	overflow: hidden;
+	position: relative;
+}
+.single-portfolio-img:hover .popup-youtube i {
+	opacity: 1;
+}
+.single-portfolio-img .popup-youtube i {
+	opacity: 0;
+}
+.video-area img,
+.single-portfolio-img img {
+	transition: 0.9s;
+}
+.video-area:hover img,
+.single-portfolio:hover img {
+	transform: scale(1.2);
+}
+.single-portfolio .review {
+    margin-bottom: 0;
+}
+
+.portfolio-sidebar img {
+    margin-top: 30px;
+	border-radius: 10px;
+}
+
+.portfolio-sidebar {
+    margin-top: 20px;
+}
+/*----------------------------------
+--------- portfolio AREA CSS END --------
+-----------------------------------*/
+
+
+/*----------------------------------
+-------- video AREA CSS START -------
+------------------------------------*/
+.video-area {
+    position: relative;
+	margin-top: 35px;
+}
+
+.popup-youtube i:hover {
+    color: #fece50;
+    border: 2px solid #fece50;
+}
+.popup-youtube i {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+	color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 18px;
+    display: inline-block;
+    transition: all 0.4s;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+.video-text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(19,21,31,0.6);
+    padding: 20px 35px;
+    width: 100%;
+}
+
+.video-text .review {
+    margin-bottom: 0;
+}
+/*----------------------------------
+--------- video AREA CSS END --------
+-----------------------------------*/
+
+/*----------------------------------
+-------- news AREA CSS START -------
+------------------------------------*/
+.single-news {
+	position: relative;
+	color: #fff;
+}
+.news-content {
+    width: 90%;
+    position: absolute;
+    left: 60px;
+    bottom: 35px;
+    right: 420px;
+}
+.news-bg-1 {
+	background: url('../img/news/news1.jpg') no-repeat center / cover;
+    /*height: 350px;*/
+    height: 550px;
+}
+.news-bg-2 {
+	background: url('../img/news/news2.jpg') no-repeat center / cover;
+    height: 350px;
+}
+.news-bg-3 {
+	background: url('../img/news/news3.jpg') no-repeat center / cover;
+    height: 350px;
+}
+.news-date {
+	position: absolute;
+	left: 60px;
+	top: 0;
+	background: #f09819; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #f09819 0%, #ef8128 34%, #ec474c 64%, #eb315a 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #f09819 0%,#ef8128 34%,#ec474c 64%,#eb315a 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #f09819 0%,#ef8128 34%,#ec474c 64%,#eb315a 100%);
+	padding: 20px;
+}
+.news-date h2 span {
+	font-size: 16px;
+}
+.news-content > h2 {
+    /*margin-bottom: 15px;*/
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.news-slider .single-news{
+    max-width: 950px;
+    margin: 50px auto 0;
+}
+.single-news a {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+}
+.news-slide-area {
+    position: relative;
+    overflow: hidden;
+}
+.news-next {
+    position: absolute;
+    width: 950px;
+    bottom: 0;
+    left: 0;
+    margin-left: -770px;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.news-prev {
+    position: absolute;
+    width: 950px;
+    bottom: 0;
+    right: 0;
+    margin-right: -770px;
+    z-index: 99;
+    cursor: pointer;
+    height: 350px;
+}
+/*----------------------------------
+--------- news AREA CSS END --------
+-----------------------------------*/
+
+/*----------------------------------
+--------- footer AREA CSS START --------
+-----------------------------------*/
+.footer {
+	background: url('../img/footer-bg.png') no-repeat bottom center / cover;
+    position: relative;
+	padding: 90px 0 30px;
+}
+.footer::before {
+    position: absolute;
+    background: #13151f;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+}
+.widget h4,.widget img {
+    margin-bottom: 40px;
+}
+
+.widget ul li {
+    margin-top: 15px;
+}
+
+.widget h6 {
+    margin-top: 18px;
+}
+
+.widget {
+    margin-bottom: 40px;
+}
+
+.widget button {
+    background: transparent;
+    color: #eb315a;
+    border: none;
+    padding: 0;
+}
+
+.widget form {
+    margin-top: 25px;
+}
+.copyright {
+    padding-top: 25px;
+}
+/*----------------------------------
+--------- footer AREA CSS END --------
+-----------------------------------*/
+
+/*----------------------------------
+---- Movie details PAGE CSS START ----
+------------------------------------*/
+.breadcrumb-area {
+    position: relative;
+    background-image: url('../img/breadcrumb.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+	padding: 280px 0 200px;
+}
+.breadcrumb-area-content {
+	text-align: center;
+}
+.breadcrumb-area-content h1 {
+	font-size: 60px;
+}
+.transformers-box {
+    padding: 35px;
+    box-shadow: 0 0 20px #000000;
+    position: relative;
+}
+
+.transformers-box .transformers-content img {
+    display: block;
+    position: relative;
+}
+
+.transformers-content > p {
+    margin: 12px 0 30px;
+    position: relative;
+    padding-left: 70px;
+}
+.transformers-content > h2 + a.theme-btn {
+    margin: 12px 10px 20px 0;
+}
+
+.transformers-content > p::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    top: 0;
+    width: 55px;
+    height: 2px;
+    margin: auto;
+    background: #eb315a;
+}
+
+.transformers-left {
+    color: #eb315a;
+    min-width: 100px;
+}
+
+.transformers-content ul li {
+    display: flex;
+    margin-top: 12px;
+    font-weight: 300;
+}
+
+.transformers-right .theme-btn {
+    margin: 0 8px;
+	padding: 2px 15px;
+}
+
+.transformers-bottom {
+    /*display: flex;*/
+    /*margin-top: 10px;*/
+    justify-content: space-between;
+}
+
+.transformers-bottom span {
+    display: block;
+    color: #eb315a;
+}
+
+.transformers-bottom p {
+    margin-bottom: 8px;
+}
+.transformers-box > .theme-btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 5px 0 0;
+}
+
+.details-content >div {
+    margin-top: 30px;
+}
+
+.details-content {
+    padding-top: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 50px;
+}
+
+.details-content >div h2 {
+    margin-bottom: 20px;
+}
+
+.details-overview h2 {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.details-overview h2::before {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    background: #eb315a;
+    content: "";
+    width: 50px;
+    height: 2px;
+}
+.select-container {
+    position: relative;
+    margin-bottom: 30px;
+}
+.textarea-container {
+    position: relative;
+}
+.textarea-container button {
+	color: #fff;
+	background: transparent;
+	font-size: 20px;
+	border: none;
+}
+.textarea-container button,
+.select-container i {
+    position: absolute;
+    right: 15px;
+    bottom: 12px;
+    margin: auto;
+}
+.details-comment {
+    display: flex;
+    align-items: center;
+}
+
+.details-comment a {
+    flex: 1;
+	text-align: center;
+}
+
+.details-comment p {
+    flex: 5;
+    margin-left: 25px;
+}
+
+.details-thumb > div {
+    padding-top: 20px;
+    display: flex;
+    width: 50%;
+}
+
+.thumb-icon {
+    width: 45px;
+    font-size: 45px;
+}
+
+.thumb-text {
+	flex: 5;
+}
+
+.details-thumb {
+    display: flex;
+}
+
+.details-thumb > div h4,
+.details-thumb > div i {
+	/*transition: 0.4s;*/
+}
+.details-thumb > div:hover h4,
+.details-thumb > div:hover i {
+	color: #eb315a
+}
+.details-thumb-next {
+    text-align: right;
+}
+
+.thumb-text h4 {
+    margin-bottom: 2px;
+}
+/*----------------------------------
+----- Movie details PAGE CSS END ----
+-----------------------------------*/
+
+/*----------------------------------
+-------- seat plan PAGE CSS START -------
+------------------------------------*/
+.buy-ticket {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+	display: none;
+    background: rgba(0,0,0,0.4);
+    z-index: 99;
+    color: #171717;
+}
+
+.show-trailers {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    display: none;
+    background: rgba(0,0,0,0.4);
+    z-index: 99;
+    color: #171717;
+}
+
+.buy-ticket-area {
+    margin-top: 140px;
+    background: #f5f5f5;
+	box-shadow: 0 0 5px #222;
+    position: relative;
+    padding: 100px 120px 120px;
+}
+.buy-ticket-area > a {
+    color: #171717;
+    font-size: 50px;
+    top: 20px;
+    right: 25px;
+    position: absolute;
+}
+
+.buy-ticket-box h4 {
+    color: #eb315a;
+    margin-bottom: 50px;
+}
+
+.buy-ticket-box h5 {
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.buy-ticket-box h6 {
+    color: #060606;
+    text-align: center;
+    border-bottom: 5px solid #eb315a;
+    padding-bottom: 8px;
+}
+
+.ticket-box-table {
+    display: flex;
+	padding-top: 35px;
+	justify-content: space-between;
+}
+
+.ticket-table-seat td.active,
+.ticket-table-seat td:hover {
+	background: #eb315a;
+	border-color: #eb315a;
+	color: #fff;
+}
+.ticket-table-seat td {
+    width: 19px;
+    height: 19px;
+    border: 1px solid #aaa;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 15px;
+    border-collapse: collapse;
+    margin: 3px;
+	font-size: 10px;
+    display: inline-block;
+}
+
+.ticket-box-table table:not(.ticket-table-seat) td {
+    line-height: 24px;
+}
+
+.ticket-box-available span {
+	display: inline-block;
+	margin-right: 30px;
+}
+.ticket-box-available input {
+	margin-right: 5px;
+	position: relative;
+	top: 2px;
+}
+.ticket-box-available {
+    margin: 50px 0;
+}
+.buy-ticket-box ul li p {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.buy-ticket-box ul li {
+    margin-bottom: 25px;
+}
+
+.buy-ticket-box ul li:last-child {
+    margin-bottom: 0;
+}
+
+.buy-ticket-box ul {
+    position: relative;
+}
+
+.buy-ticket-box ul::before {
+    left: -50px;
+    top: 30px;
+    bottom: 50px;
+    width: 2px;
+    background: #aaa;
+    content: "";
+    position: absolute;
+}
+
+.buy-ticket-box > a.theme-btn {
+    margin-right: 5px;
+}
+/*----------------------------------
+--------- seat plan PAGE CSS END --------
+-----------------------------------*/
+
+/*----------------------------------
+-------- login PAGE CSS START -------
+------------------------------------*/
+
+/*----------------------------------
+--------- login PAGE CSS END --------
+-----------------------------------*/
+.login-area,
+.signup-area,
+.forgot-password-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+	display: none;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 99;
+	padding: 0 15px;
+}
+
+.login-box {
+    max-width: 380px;
+    background: #fff;
+    position: relative;
+    color: #03090e;
+    margin: 200px auto 0;
+    padding: 40px 25px 40px;
+}
+
+.login-box a {
+    color: #03090e;
+}
+
+.login-box > a {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #eb315a;
+    font-size: 22px;
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+}
+
+.login-box h2 {
+    text-align: center;
+    color: #03090e;
+    margin-bottom: 20px;
+}
+
+.login-box h6 {}
+
+.login-box h6 {
+    color: #03090e;
+    margin-bottom: 12px;
+}
+
+.login-box input {
+    margin-bottom: 20px;
+	background: transparent;
+	border: 1px solid #ddd;
+    color: black;
+}
+
+.login-signup,
+.login-popup-btn {
+    float: right;
+}
+
+.login-remember {
+    float: left;
+}
+
+.login-signup a {
+    color: #008aff;
+}
+
+.login-box form .theme-btn {
+    width: 100%;
+    border-radius: 0;
+	color: #fff;
+	text-align: center;
+    margin-top: 5px;
+}
+
+.login-box form .theme-btn + span {
+    margin: 22px 0;
+    display: block;
+}
+
+.login-social {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-social a i {
+    width: 45px;
+    display: inline-block;
+    height: 45px;
+    font-size: 20px;
+    line-height: 45px;
+    color: #fff;
+    background: #3a559f;
+    text-align: center;
+}
+.login-social a i.icofont-social-twitter {
+    background: #50abf1;
+}
+.login-social a i.icofont-social-linkedin {
+    background: #dd4b39;
+}
+.login-social a i.icofont-social-google-plus {
+    background: #0084b1;
+}
+.login-social a i.icofont-camera {
+    background: #c536a4;
+}
+/*----------------------------------
+-------- blog PAGE CSS START -------
+------------------------------------*/
+.blog-area {
+	padding-top: 30px;
+}
+.blog-area .single-news {
+	margin-top: 70px;
+}
+/*----------------------------------
+--------- blog PAGE CSS END --------
+-----------------------------------*/
+
+/*----------------------------------
+-------- blog details PAGE CSS START -------
+------------------------------------*/
+.news-details a i {
+	margin-right: 5px;
+}
+.news-details > h2 {
+    margin: 30px 0 5px;
+}
+
+.news-details > h2 + a,.news-details > h2 + a + a {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.news-details > p {
+    margin-top: 25px;
+}
+
+.news-details .details-thumb {
+    border-top: 1px solid #ddd;
+	padding-bottom: 15px;
+}
+
+.news-details .details-comment {
+    padding: 25px 0 30px;
+}
+
+.news-details .details-reply {
+	margin-top: 25px;
+}
+.news-details .details-reply h2 {
+    margin-bottom: 25px;
+}
+
+.blog-sidebar ul li {
+    border-bottom: 1px solid #ddd;
+    margin-top: 10px;
+    padding-bottom: 3px;
+}
+
+.blog-sidebar h4 {
+    margin-top: 35px;
+}
+
+.news-details {
+    padding-top: 35px;
+}
+.detail-author {
+    margin: 40px 0;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 30px 0;
+}
+
+.details-author h4 {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.details-author a {
+    margin-left: 20px;
+}
+/*----------------------------------
+---------  blog details PAGE CSS END --------
+-----------------------------------*/
+
+/*--------------------------------------
+-------- Pre Loader Style START --------
+---------------------------------------*/
+#preloader {
+  position: fixed;
+  z-index: 99999999999;
+  top: 0;
+  left: 0;
+  overflow: visible;
+  width: 100%;
+  height: 100%;
+  background: #fff url("../img/loader.gif") no-repeat center center;
+}
+/*--------------------------------------
+--------- Pre Loader Style END ---------
+---------------------------------------*/

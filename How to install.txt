@@ -1,0 +1,11 @@
+Note:
+- system/config.php (database setup)
+- views/movies/movie-detail.php (change facebook app ID)
+
+In v3:
+
+1) Add, Edit, Delete celebrities.
+2) Add cast in movies.
+3) Show biography and filmography of celebrities.
+
+Kindly keep checking adnan-tech.com for version 4 when released.
