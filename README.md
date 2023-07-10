@@ -19,7 +19,7 @@
 
 # Screenshot
 
-![Movie ticket booking site in PHP and MySQL - MVC pattern](https://adnan-tech.com/uploads/screenshot-2.png)
+![Movie ticket booking site in PHP and MySQL - MVC pattern](https://adnan-tech.com/wp-content/uploads/2020/09/Movie-ticket-booking-website-PHP-and-MySQL.jpg)
 
 # Installation
 
